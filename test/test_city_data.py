@@ -1,5 +1,5 @@
 import pytest
-from src.city_data import CityData
+from city_data import CityData
 
 
 def test_city_data_init():

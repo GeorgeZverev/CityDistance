@@ -15,7 +15,7 @@ def test_distance_calculator():
 
 def test_end_to_end():
     world_map = WorldMap()
-    world_map.load(".\\resources\\worldcities_countries.csv")
+    world_map.load(".\\test\\resources\\worldcities_countries.csv")
     city_one_coordinates = world_map.search('Japan', 'Tokyo')
     city_two_coordinates = world_map.search('Indonesia', 'Jakarta')
 

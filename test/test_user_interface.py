@@ -9,7 +9,7 @@ from world_map import WorldMap
 def test_take_user_input(mock_input):
     instance = UserInterface()
     world_map = WorldMap()
-    world_map.load(".\\resources\\worldcities_countries.csv")
+    world_map.load(".\\test\\resources\\worldcities_countries.csv")
     source, destination = instance.take_partial_user_input(world_map)
     expected_result = ('Japan,Tokyo', 'Germany,Berlin')
     assert expected_result == (source, destination)

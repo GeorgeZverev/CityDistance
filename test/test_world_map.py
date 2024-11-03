@@ -10,7 +10,7 @@ def test_world_map_init():
 
 def test_load_map():
     instance = WorldMap()
-    instance.load(".\\resources\\worldcities_countries.csv")
+    instance.load(".\\test\\resources\\worldcities_countries.csv")
 
     assert len(instance.cities) == 6
 
@@ -43,7 +43,7 @@ def test_country_city_key():
 
 def test_search_func():
     world_map = WorldMap()
-    world_map.load(".\\resources\\worldcities_countries.csv")
+    world_map.load(".\\test\\resources\\worldcities_countries.csv")
     result = world_map.search('Japan', 'Tokyo')
     assert result == (35.6897, 139.6922)
 
